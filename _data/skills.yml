@@ -1,19 +1,23 @@
-- name: Software Engineer Keywords
+# - name: Software Engineer Keywords
+#   keywords:
+#       - Java
+#       - C++
+- name:  
   keywords:
-      - Java
-      - C++
+      - Ruby on Rails
+      - 微信小程序
       - Python
-      - Design Patterns
-
-- name: Mobile Developer Keywords
-  keywords:
-      - Android
-      - Reverse Engineering
-
-- name: Windows Developer Keywords
-  keywords:
-      - Win32 SDK
-      - DuiLib
-      - WTL
-      - COM
-      - WinDbg
+      - Vue
+      - Docker
+      - Kubernetes
+      - Ansible
+      - Capistrano
+      - 站群
+      - Redis
+      - Mysql
+      - Postgresql
+      - Nginx
+      - Selenium
+      - Gitlab
+      - Mailserver
+      - Openldap

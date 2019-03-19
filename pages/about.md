@@ -1,29 +1,32 @@
 ---
 layout: page
-title: About
-description: 打码改变世界
-keywords: Zhuang Ma, 马壮
+title: 关于我
+description: 只求日更十字
+keywords: chu
 comments: true
 menu: 关于
 permalink: /about/
 ---
 
-我是马壮，码而生，码而立。
+『chu』
 
-仰慕「优雅编码的艺术」。
+『王者荣耀』爱好者
 
-坚信熟能生巧，努力改变人生。
+『生产力』书控、工具控
+
+『专注内容产出』不求排版细节，只求日更十字 ~
 
 ## 联系
 
 {% for website in site.data.social %}
-* {{ website.sitename }}：[@{{ website.name }}]({{ website.url }})
+<!-- * {{ website.sitename }}：[@{{ website.name }}]({{ website.url }}) -->
+* {{ website.sitename }}：<{{ website.url }}>
 {% endfor %}
 
-## Skill Keywords
+## 技术栈
 
 {% for category in site.data.skills %}
-### {{ category.name }}
+<!-- ### {{ category.name }} -->
 <div class="btn-inline">
 {% for keyword in category.keywords %}
 <button class="btn btn-outline" type="button">{{ keyword }}</button>

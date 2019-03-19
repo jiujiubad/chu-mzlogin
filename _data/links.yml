@@ -1,6 +1,15 @@
 - name: 码志
   url: http://mazhuang.org
 
+- name: 阮一峰的个人网站
+  url: http://www.ruanyifeng.com/home.html
+
+- name: 廖雪峰的官方网站
+  url: https://www.liaoxuefeng.com/
+
+- name: Rei
+  url: https://chloerei.com/
+
 - name: Connie 酱
   url: https://connie99.github.io
 

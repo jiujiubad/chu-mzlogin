@@ -2,25 +2,25 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: https://xiaochu.cf
+url: https://mazhuang.org
 date_format: "ordinal"
-title: chu
-subtitle: "只求日更十字"
-description: "chu 的个人博客"
-keywords: chu
-timezone: Asia/Guanddong
+title: 码志
+subtitle: "扫码改变人生"
+description: "马壮的个人博客"
+keywords: 码志, Zhuang Ma, mzlogin, mazhuang
+timezone: Asia/Shanghai
 encoding: "utf-8"
-side_bar_repo_limit: 3
+side_bar_repo_limit: 5
 
 # ---------------- #
 #      Author      #
 # ---------------- #
-author: chu
+author: Zhuang Ma
 organization: 
 organization_url: 
-github_username: jiujiubad
-location: ShenZhen, China
-email: jiujiubad@gmail.com
+github_username: mzlogin
+location: Wuhan, China
+email: chumpma@gmail.com
 
 # ---------------- #
 #    Navigation    #
@@ -34,13 +34,13 @@ navs:
     href: /categories/
     label: 分类
 
-  -
-    href: /archives/
-    label: 归档
+#   -
+#     href: /archives/
+#     label: 归档
 
   -
     href: /wiki/
-    label: Wiki
+    label: 维基
 
   -
     href: /links/
@@ -58,9 +58,9 @@ subscribe_rss: /feed.xml
 # ---------------- #
 #      Jekyll      #
 # ---------------- #
-markdown: kramdown #使用kramdown做代码语法高亮
+markdown: kramdown
 kramdown:
-    input: GFM     #启用github的markdown语法
+    input: GFM
 highlighter: rouge
 paginate: 10
 lsi: false
@@ -72,33 +72,24 @@ gems:
     - rouge
 #     - jekyll-html-pipeline
     - jekyll-paginate
-    - jekyll-sitemap     #生成sitemap
+    - jekyll-sitemap
     - jekyll-feed
-    - jemoji             #允许标签
-#     - jekyll-mentions  #允许"@ somebody"
+    - jemoji
+#     - jekyll-mentions
 collections:
     wiki:
         output: true
         permalink: /wiki/:path/
 
-repository: jiujiubad/https://github.com/jiujiubad/chu-mzlogin
+repository: mzlogin/mzlogin.github.io
 
 # ---------------- #
 #      Comments    #
 # ---------------- #
-# support provider: valine + valine-admin > gitalk > gitment > livere > 畅言
-comments_provider: valine_comment  #选用一个评论工具
-# valine官方，https://valine.js.org/quickstart.html
-# valine-admin官方，https://github.com/DesertsP/Valine-Admin
-valine_comment:
-    enable: true
-    leancloud_appid: FHb8aJ7oAcDl26IuPtRv9lPn-gzGzoHsz
-    leancloud_appkey: nBnidzcikGtDKHFvyUBM9PG9
-    placeholder: "说点什么吧..."
-    visitor: true     #阅读量统计，https://valine.js.org/visitor.html
-    avatar: mp        #头像，https://valine.js.org/avatar.html
-    notify: false     #评论回复时邮件提醒，https://github.com/xCss/Valine/wiki
-    verify: false     #验证码
+# support provider: disqus, gitment, gitalk
+comments_provider: gitalk
+# !!!重要!!! 请修改下面这些信息为你自己申请的
+# !!!Important!!! Please modify infos below to yours
 # https://disqus.com
 disqus:
     username: 
@@ -123,9 +114,9 @@ lazy_load_disqus : false
 # ---------------- #
 simple_jekyll_search:
     # 是否支持全文搜索
-    fulltext: true
+    fulltext: false
     # 最多显示多少条搜索结果
-    limit: 20
+    limit: 10
 
 # ---------------- #
 #    Analytics     #
