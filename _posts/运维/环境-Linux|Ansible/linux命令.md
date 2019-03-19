@@ -218,6 +218,7 @@ find / -size +1G -ls
 tar 类型：`z` 参数表示压缩，`cvf` 是打包
 
 ```
+apt-get install zip
 tar -zcvf test.tar.gz ./test
 tar -xvf test.tar.gz 
 ```
