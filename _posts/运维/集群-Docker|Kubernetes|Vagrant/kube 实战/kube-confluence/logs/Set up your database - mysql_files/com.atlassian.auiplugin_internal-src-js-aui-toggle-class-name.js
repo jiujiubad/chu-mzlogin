@@ -1,0 +1,4 @@
+;
+/* module-key = 'com.atlassian.auiplugin:internal-src-js-aui-toggle-class-name', location = 'src/js/aui/toggle-class-name.js' */
+("undefined"===typeof window?global:window).__e0ba905045681a6dd3c850442fdb3cec=function(){function c(a,b){(a=(0,e.default)(a))&&a.toggleClass(b)}var d={};"use strict";Object.defineProperty(d,"__esModule",{value:!0});var a=__1eb48266f41b91e032ea4c8f591d9298,e=a&&a.__esModule?a:{"default":a},a=__1f642ac889edd28b9a56a069e947b2fa,b=__b613df58051c78dae364b2cf48254285,b=b&&b.__esModule?b:{"default":b},c=(0,a.fn)(c,"toggleClassName",{sinceVersion:"5.8.0"});(0,b.default)("toggleClassName",c);d.default=c;
+return d=d["default"]}.call(this);;

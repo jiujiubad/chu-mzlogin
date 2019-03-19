@@ -1,0 +1,4 @@
+;
+/* module-key = 'confluence.aui.staging:dark-features', location = 'js/dark-features.js' */
+define("confluence/dark-features",["confluence/meta","jquery"],function(e,f){var c=e.get("enabled-dark-features"),d=c?c.split(","):[],b={};f.each(d,function(){b[this]=!0});return{isEnabled:function(a){return!!b[a]&&!b[a+".disable"]},enable:function(a){a&&(b[a]=!0,b[a+".disable"]&&delete b[a+".disable"])},disable:function(a){a&&(void 0!==b[a]&&delete b[a],void 0!==b[a+".disable"]&&delete b[a+".disable"])},getAllEnabled:function(){return d}}});
+require("confluence/module-exporter").exportModuleAsGlobal("confluence/dark-features","AJS.DarkFeatures");;

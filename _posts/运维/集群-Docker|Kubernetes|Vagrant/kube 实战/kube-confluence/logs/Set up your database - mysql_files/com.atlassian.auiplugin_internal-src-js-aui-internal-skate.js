@@ -1,0 +1,3 @@
+;
+/* module-key = 'com.atlassian.auiplugin:internal-src-js-aui-internal-skate', location = 'src/js/aui/internal/skate.js' */
+("undefined"===typeof window?global:window).__c78625c2aff08e683738b7980cffc672=function(){var b={};"use strict";Object.defineProperty(b,"__esModule",{value:!0});var a=__f40e8345cf97d7427fefc985efb1673b,a=(a&&a.__esModule?a:{"default":a}).default.noConflict();b.default=a;return b=b["default"]}.call(this);;

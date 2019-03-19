@@ -1,0 +1,4 @@
+;
+/* module-key = 'com.atlassian.auiplugin:internal-src-js-aui-include', location = 'src/js/aui/include.js' */
+("undefined"===typeof window?global:window).__39b4f710126951afb45d0002ffacb67d=function(){function d(a){return a&&a.__esModule?a:{"default":a}}function b(a){if(!(0,f.default)(e,a)){e.push(a);var b=document.createElement("script");b.src=a;(0,g.default)("body").append(b)}}var c={};"use strict";Object.defineProperty(c,"__esModule",{value:!0});var g=d(__1eb48266f41b91e032ea4c8f591d9298),h=__1f642ac889edd28b9a56a069e947b2fa,f=d(__1f58e690e1121177d73459b42a1e3576),i=d(__b613df58051c78dae364b2cf48254285),
+e=[],b=(0,h.fn)(b,"include",{sinceVersion:"5.9.0",extraInfo:"No alternative will be provided. Use a proper module loader instead."});(0,i.default)("include",b);c.default=b;return c=c["default"]}.call(this);;

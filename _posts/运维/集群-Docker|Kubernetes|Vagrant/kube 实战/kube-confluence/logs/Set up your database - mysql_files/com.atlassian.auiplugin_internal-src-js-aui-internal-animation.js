@@ -1,0 +1,3 @@
+;
+/* module-key = 'com.atlassian.auiplugin:internal-src-js-aui-internal-animation', location = 'src/js/aui/internal/animation.js' */
+("undefined"===typeof window?global:window).__972608b750af83d549897a1abcf4bf44=function(){var b={};"use strict";Object.defineProperty(b,"__esModule",{value:!0});b.recomputeStyle=function(a){a=a.length?a[0]:a;window.getComputedStyle(a,null).getPropertyValue("left")};return b}.call(this);;

@@ -1,0 +1,4 @@
+;
+/* module-key = 'com.atlassian.auiplugin:internal-object-assign-4.0.1-index', location = 'node_modules/object-assign/index.js' */
+("undefined"===typeof window?global:window).__7093939cd97251fae1fa2f5c3c55abd2=function(){var h={},i=Object.prototype.hasOwnProperty,j=Object.prototype.propertyIsEnumerable;return h=Object.assign||function(e,h){var a,d;if(null===e||void 0===e)throw new TypeError("Object.assign cannot be called with null or undefined");d=Object(e);for(var b,f=1;f<arguments.length;f++){a=Object(arguments[f]);for(var g in a)i.call(a,g)&&(d[g]=a[g]);if(Object.getOwnPropertySymbols){b=Object.getOwnPropertySymbols(a);for(var c=
+0;c<b.length;c++)j.call(a,b[c])&&(d[b[c]]=a[b[c]])}}return d}}.call(this);;

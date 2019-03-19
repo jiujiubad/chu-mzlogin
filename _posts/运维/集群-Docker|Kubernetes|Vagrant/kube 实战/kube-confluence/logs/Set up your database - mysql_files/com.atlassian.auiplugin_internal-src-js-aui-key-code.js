@@ -1,0 +1,4 @@
+;
+/* module-key = 'com.atlassian.auiplugin:internal-src-js-aui-key-code', location = 'src/js/aui/key-code.js' */
+("undefined"===typeof window?global:window).__2d62fee3ee7452731a665cbfb7024e5c=function(){var b={};"use strict";Object.defineProperty(b,"__esModule",{value:!0});var a=__b613df58051c78dae364b2cf48254285,a=a&&a.__esModule?a:{"default":a},c={ALT:18,BACKSPACE:8,CAPS_LOCK:20,COMMA:188,COMMAND:91,COMMAND_LEFT:91,COMMAND_RIGHT:93,LEFT_SQUARE_BRACKET:91,CONTROL:17,DELETE:46,DOWN:40,END:35,ENTER:13,ESCAPE:27,HOME:36,INSERT:45,LEFT:37,MENU:93,NUMPAD_ADD:107,NUMPAD_DECIMAL:110,NUMPAD_DIVIDE:111,NUMPAD_ENTER:108,
+NUMPAD_MULTIPLY:106,NUMPAD_SUBTRACT:109,PAGE_DOWN:34,PAGE_UP:33,PERIOD:190,RIGHT:39,SHIFT:16,SPACE:32,TAB:9,UP:38,WINDOWS:91};(0,a.default)("keyCode",c);b.default=c;return b=b["default"]}.call(this);;

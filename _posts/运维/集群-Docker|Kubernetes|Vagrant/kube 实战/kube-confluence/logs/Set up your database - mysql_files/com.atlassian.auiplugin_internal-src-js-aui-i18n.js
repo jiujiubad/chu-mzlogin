@@ -1,0 +1,4 @@
+;
+/* module-key = 'com.atlassian.auiplugin:internal-src-js-aui-i18n', location = 'src/js/aui/i18n.js' */
+("undefined"===typeof window?global:window).__b32f862918680df4e9f235eb6ba33e07=function(){function c(a){return a&&a.__esModule?a:{"default":a}}var b={};"use strict";Object.defineProperty(b,"__esModule",{value:!0});var e=c(__a846cb2e9185358b8e95949c71ee9783),f=c(__b613df58051c78dae364b2cf48254285),d={keys:c(__45ffb2ddd13628ca977b9a56aeebf1c6).default,getText:function(a){var b=Array.prototype.slice.call(arguments,1);return Object.prototype.hasOwnProperty.call(this.keys,a)?e.default.apply(null,[this.keys[a]].concat(b)):
+a}};(0,f.default)("I18n",d);b.default=d;return b=b["default"]}.call(this);;

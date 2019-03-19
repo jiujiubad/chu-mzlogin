@@ -1,0 +1,3 @@
+;
+/* module-key = 'com.atlassian.auiplugin:internal-src-js-aui-underscore', location = 'src/js/aui/underscore.js' */
+("undefined"===typeof window?global:window).__2cccefaa94fbf28fe407d49180e63c13=function(){var b={};"use strict";Object.defineProperty(b,"__esModule",{value:!0});var a=__0a791235a48093f6af7f79cdeaaa24aa,a=a&&a.__esModule?a:{"default":a};window._||(window._=a.default);b.default=window._;return b=b["default"]}.call(this);;

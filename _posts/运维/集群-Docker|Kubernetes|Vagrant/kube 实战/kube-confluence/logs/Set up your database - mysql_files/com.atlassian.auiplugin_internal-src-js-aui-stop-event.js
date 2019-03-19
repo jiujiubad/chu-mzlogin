@@ -1,0 +1,3 @@
+;
+/* module-key = 'com.atlassian.auiplugin:internal-src-js-aui-stop-event', location = 'src/js/aui/stop-event.js' */
+("undefined"===typeof window?global:window).__f6be2a6341bc9dee141ae7e94d0bcd0b=function(){function b(a){a.stopPropagation();return!1}var c={};"use strict";Object.defineProperty(c,"__esModule",{value:!0});var d=__1f642ac889edd28b9a56a069e947b2fa,a=__b613df58051c78dae364b2cf48254285,a=a&&a.__esModule?a:{"default":a},b=(0,d.fn)(b,"stopEvent",{alternativeName:"preventDefault()",sinceVersion:"5.8.0"});(0,a.default)("stopEvent",b);c.default=b;return c=c["default"]}.call(this);;

@@ -1,0 +1,4 @@
+;
+/* module-key = 'com.atlassian.auiplugin:internal-src-js-aui-forms', location = 'src/js/aui/forms.js' */
+("undefined"===typeof window?global:window).__592debd787c3ab53402419d895ba9321=function(){function c(a,b){var c=(0,d.default)(a);"undefined"===typeof b&&(b=!0);return c.each(function(){this.disabled=!b})}function e(){(0,d.default)(".icon-inline-help").click(function(){var a=(0,d.default)(this).siblings(".field-help");a.hasClass("hidden")?a.removeClass("hidden"):a.addClass("hidden")})}var b={};"use strict";Object.defineProperty(b,"__esModule",{value:!0});b.inlineHelp=b.enable=void 0;var a=__1eb48266f41b91e032ea4c8f591d9298,
+d=a&&a.__esModule?a:{"default":a},a=(a=__b613df58051c78dae364b2cf48254285)&&a.__esModule?a:{"default":a};(0,a.default)("enable",c);(0,a.default)("inlineHelp",e);b.enable=c;b.inlineHelp=e;return b}.call(this);;

@@ -1,0 +1,3 @@
+;
+/* module-key = 'com.atlassian.auiplugin:internal-src-js-aui-version', location = 'src/js/aui/version.js' */
+("undefined"===typeof window?global:window).__d8f7e8bbf87ed004bb0a9787c04a8554=function(){var b={};"use strict";Object.defineProperty(b,"__esModule",{value:!0});var a=__b613df58051c78dae364b2cf48254285,a=a&&a.__esModule?a:{"default":a};(0,a.default)("version","7.6.3");b.default="7.6.3";return b=b["default"]}.call(this);;

@@ -1,0 +1,4 @@
+;
+/* module-key = 'com.atlassian.auiplugin:internal-skatejs-0.13.17-lib-version', location = 'node_modules/skatejs/lib/version.js' */
+("undefined"===typeof window?global:window).__5be710c51acfa94423c8694dd9c15017=function(){var d={exports:{}},f=d.exports,i={module:d,exports:f},a;a=function(a,c,g){var e=("undefined"===typeof window?global:window).define,b,h,g=[g,c,a].filter(function(a){return"function"===typeof a})[0],c=[c,a,[]].filter(Array.isArray)[0];b=g.apply(null,c.map(function(a){return i[a]}));h=typeof b;"function"===typeof e&&e("string"===typeof a?a:"__5be710c51acfa94423c8694dd9c15017",c,g);"string"===h?b=String(b):"number"===
+h?b=Number(b):"boolean"===h&&(b=Boolean(b));void 0!==b&&(f=d.exports=b)};a.amd=!0;var e=function(a,c){c.exports="0.13.17"};"function"===typeof a&&a.amd?a(["exports","module"],e):"undefined"!==typeof f&&"undefined"!==typeof d&&e(f,d);return d.exports}.call(this);;

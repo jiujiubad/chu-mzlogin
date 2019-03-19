@@ -1,0 +1,4 @@
+;
+/* module-key = 'com.atlassian.auiplugin:internal-src-js-aui-is-visible', location = 'src/js/aui/is-visible.js' */
+("undefined"===typeof window?global:window).__dd2b530b425b82198102a1d999e01470=function(){function c(a){return!(0,e.default)(a).hasClass("hidden")}var d={};"use strict";Object.defineProperty(d,"__esModule",{value:!0});var a=__1eb48266f41b91e032ea4c8f591d9298,e=a&&a.__esModule?a:{"default":a},a=__1f642ac889edd28b9a56a069e947b2fa,b=__b613df58051c78dae364b2cf48254285,b=b&&b.__esModule?b:{"default":b},c=(0,a.fn)(c,"isVisible",{sinceVersion:"5.9.0",extraInfo:"No alternative will be provided. Use jQuery.hasClass() instead."});
+(0,b.default)("isVisible",c);d.default=c;return d=d["default"]}.call(this);;

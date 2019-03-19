@@ -1,0 +1,3 @@
+;
+/* module-key = 'com.atlassian.auiplugin:internal-src-js-aui-internal-state', location = 'src/js/aui/internal/state.js' */
+("undefined"===typeof window?global:window).__063fa9aecb152bc6b30f2cb2ae59ab37=function(){var a={};"use strict";Object.defineProperty(a,"__esModule",{value:!0});a.default=function(b){return{set:function(a,c){void 0===b._state&&(b._state={});b._state[a]=c},get:function(a){if(b._state)return b._state[a]}}};return a=a["default"]}.call(this);;

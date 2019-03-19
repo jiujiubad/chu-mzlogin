@@ -1,0 +1,4 @@
+;
+/* module-key = 'com.atlassian.auiplugin:internal-src-js-aui-internal-log', location = 'src/js/aui/internal/log.js' */
+("undefined"===typeof window?global:window).__89656e4711dc98e663b0f5fc5aa5d55c=function(){function c(a){return function(){"undefined"!==typeof console&&console[a]&&Function.prototype.apply.call(console[a],console,arguments)}}var a={};"use strict";Object.defineProperty(a,"__esModule",{value:!0});a.error=a.warn=a.log=void 0;var b=__b613df58051c78dae364b2cf48254285,b=b&&b.__esModule?b:{"default":b},d=c("log"),e=c("warn"),f=c("error");(0,b.default)("error",f);(0,b.default)("log",d);(0,b.default)("warn",
+e);a.log=d;a.warn=e;a.error=f;return a}.call(this);;

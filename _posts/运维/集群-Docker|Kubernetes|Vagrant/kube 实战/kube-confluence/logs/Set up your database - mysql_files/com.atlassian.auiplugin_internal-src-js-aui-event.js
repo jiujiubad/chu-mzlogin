@@ -1,0 +1,5 @@
+;
+/* module-key = 'com.atlassian.auiplugin:internal-src-js-aui-event', location = 'src/js/aui/event.js' */
+("undefined"===typeof window?global:window).__d418b1b1109d8fd5d95b78b493695411=function(){function g(a,b,c){try{return"function"===typeof c?(0,f.default)(window).bind(a,b,c):(0,f.default)(window).bind(a,b)}catch(e){d.log("error while binding: "+e.message)}}function h(a,b){try{return(0,f.default)(window).unbind(a,b)}catch(c){d.log("error while unbinding: "+c.message)}}function i(a,b){try{return(0,f.default)(window).trigger(a,b)}catch(c){d.log("error while triggering: "+c.message)}}var c={};"use strict";
+Object.defineProperty(c,"__esModule",{value:!0});c.trigger=c.unbind=c.bind=void 0;var a=__1eb48266f41b91e032ea4c8f591d9298,f=a&&a.__esModule?a:{"default":a},d;if((a=__89656e4711dc98e663b0f5fc5aa5d55c)&&a.__esModule)d=a;else{var e={};if(null!=a)for(var b in a)Object.prototype.hasOwnProperty.call(a,b)&&(e[b]=a[b]);e.default=a;d=e}b=(b=__b613df58051c78dae364b2cf48254285)&&b.__esModule?b:{"default":b};(0,b.default)("bind",g);(0,b.default)("trigger",i);(0,b.default)("unbind",h);c.bind=g;c.unbind=h;c.trigger=
+i;return c}.call(this);;

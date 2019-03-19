@@ -1,0 +1,3 @@
+;
+/* module-key = 'com.atlassian.auiplugin:internal-src-js-aui-internal-widget', location = 'src/js/aui/internal/widget.js' */
+("undefined"===typeof window?global:window).__045396eb80ea30210d7d51a20e70f6a3=function(){var a={};"use strict";Object.defineProperty(a,"__esModule",{value:!0});a.default=function(a,d){var e="_aui-widget-"+a;return function(a,g){var b,c;f.default.isPlainObject(a)?c=a:(b=a,c=g);b=b&&(0,f.default)(b);!b||!b.data(e)?(c=new d(b,c||{}),b=c.$el,b.data(e,c)):c=b.data(e);return c}};var d=__1eb48266f41b91e032ea4c8f591d9298,f=d&&d.__esModule?d:{"default":d};return a=a["default"]}.call(this);;

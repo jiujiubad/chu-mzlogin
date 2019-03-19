@@ -1,0 +1,3 @@
+;
+/* module-key = 'com.atlassian.auiplugin:internal-src-js-aui-fancy-file-input', location = 'src/js/aui/fancy-file-input.js' */
+("undefined"===typeof window?global:window).__7f1b0aad07072229e961b7a9954b03d1=function(){var a={};Object.defineProperty(a,"__esModule",{value:!0});var b=__528b3c4c720ac571447ea5181d5f1aee;a.default=(b&&b.__esModule?b:{"default":b}).default;return a=a["default"]}.call(this);;

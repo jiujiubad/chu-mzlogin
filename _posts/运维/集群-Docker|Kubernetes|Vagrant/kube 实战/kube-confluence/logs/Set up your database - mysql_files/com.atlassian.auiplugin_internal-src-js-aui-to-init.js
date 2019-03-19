@@ -1,0 +1,4 @@
+;
+/* module-key = 'com.atlassian.auiplugin:internal-src-js-aui-to-init', location = 'src/js/aui/to-init.js' */
+("undefined"===typeof window?global:window).__5b26d9c8f9a7396a261ef2868ddefeaf=function(){function f(a){(0,g.default)(function(){try{a.apply(this,arguments)}catch(b){d.log("Failed to run init function: "+b+"\n"+a.toString())}});return this}var c={};"use strict";Object.defineProperty(c,"__esModule",{value:!0});var a=__1eb48266f41b91e032ea4c8f591d9298,g=a&&a.__esModule?a:{"default":a},d;if((a=__89656e4711dc98e663b0f5fc5aa5d55c)&&a.__esModule)d=a;else{var e={};if(null!=a)for(var b in a)Object.prototype.hasOwnProperty.call(a,
+b)&&(e[b]=a[b]);e.default=a;d=e}b=(b=__b613df58051c78dae364b2cf48254285)&&b.__esModule?b:{"default":b};(0,b.default)("toInit",f);c.default=f;return c=c["default"]}.call(this);;

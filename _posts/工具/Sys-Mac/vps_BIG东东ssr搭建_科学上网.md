@@ -1,0 +1,159 @@
+* 201805
+* 工具+mac+vps
+
+
+
+### 2017年11月29日发布
+
+视频地址：https://www.youtube.com/watch?v=xrbviAfagrU&t=687s
+
+所有使用到的代码都在下面的链接里， [https://github.com/allenking1028/ss/i...](https://www.youtube.com/redirect?q=https%3A%2F%2Fgithub.com%2Fallenking1028%2Fss%2Fissues%2F1&redir_token=1MogEDK_yxKLi4ipPFyS5tFp3458MTUyNjI5NzI0OEAxNTI2MjEwODQ4&event=video_description&v=xrbviAfagrU) 
+
+其他平台软件下载地址 MAC   [https://github.com/qinyuhang/Shadowso...](https://www.youtube.com/redirect?q=https%3A%2F%2Fgithub.com%2Fqinyuhang%2FShadowsocksX-NG-R%2Freleases&redir_token=1MogEDK_yxKLi4ipPFyS5tFp3458MTUyNjI5NzI0OEAxNTI2MjEwODQ4&event=video_description&v=xrbviAfagrU) 
+
+下载最新版 PC [https://github.com/shadowsocksrr/shad...](https://www.youtube.com/redirect?q=https%3A%2F%2Fgithub.com%2Fshadowsocksrr%2Fshadowsocksr-csharp%2Freleases&redir_token=1MogEDK_yxKLi4ipPFyS5tFp3458MTUyNjI5NzI0OEAxNTI2MjEwODQ4&event=video_description&v=xrbviAfagrU) 
+
+下载最新版 一定要新建一个文件夹因为它会生成几个文件，然后把4.0的拖入 双击运行-屏幕右下角小飞机右键-服务器-编辑服务器-服务器IP 服务器端口号 密码 加密 协议 混淆 这几项一个都不能错。MAC也一样 。
+
+---------------------------
+
+ Google Cloud Platform免费赠送的300美元，可以使用使用12个月，没有每个月流量限制你可以1天用完也可以慢慢用一年，这一点与亚马逊云还有微软云有点不一样，亚马逊和微软每月只有30G流量（15上15下）超了直接就开始扣费了
+
+
+
+# 一、安装或卸载
+
+系统要求：CentOS 6+ / Debian 6+ / Ubuntu 14.04 +
+
+推荐使用： 为了方便换用v2ray，用**Debian9**
+
+## 步骤1 安装BBR加速器
+
+### 方案1，20180510更新（好用，容易安装）
+
+使用 root 用户输入下面命令安装或卸载
+
+```
+bash <(curl -s -L https://233blog.com/v2ray.sh)
+```
+
+> 如果提示 curl: command not found ，那是因为你的小鸡没装 Curl ubuntu/debian 系统安装 Curl 方法: `apt-get update -y && apt-get install curl -y` centos 系统安装 Curl 方法: `yum update -y && yum install curl -y` 安装好 curl 之后就能安装脚本了
+
+选择9其他，再选择1安装BBR，版本默认。
+
+### 方案2，安装BBR加速（实测无用，垃圾）
+
+1）使用root权限
+
+```
+sudo -i
+或
+ssh root@ip地址
+```
+
+2）安装
+
+```
+wget --no-check-certificate https://github.com/iyuco/scripts/raw/master/bbr.sh
+chmod +x bbr.sh
+./bbr.sh
+```
+
+* 出现提示：needs to be restart. Do you want to reboot?时，**选择n**，否则重启后卡住了。
+
+![image-20180514000425428](https://ws3.sinaimg.cn/large/006tKfTcly1fra5ranxtvj30xi07lgqb.jpg)
+
+3）卸载
+
+### 卸载方法
+
+vi /etc/sysctl.conf
+把net.ipv4.tcp_congestion_control = bbr
+改成#net.ipv4.tcp_congestion_control = bbr
+然后reboot
+
+### 方案3，第二套代码（有时行有时不行）
+
+```
+wget -N --no-check-certificate https://raw.githubusercontent.com/FunctionClub/YankeeBBR/master/bbr.sh && bash bbr.sh install
+```
+
+```
+bash bbr.sh start
+```
+
+* 会有中文字提示“魔改版BBR启动成功！”
+
+### 方案4，20180427更新（有时会中断或不起作用）
+
+一键安装脚本如下，测速youtube的4k视频，30000kbps：
+
+```
+wget xiaofd.github.io/ruisu.sh && bash ruisu.sh  
+```
+
+安装完会断开vps连接是正常现象，重启后就安装好了锐速。检测是否安装成功：
+
+```
+ps aux | grep appex
+```
+
+会出现类似词语：“Ubuntu_16.04_4.4.0-47-generic”即有关键词"generic"时，说明已安装！！
+
+查看锐速状态/重启（实测正常reboot后ruisu会自启动，但要等shadowsocks重启之后一两分钟，查看status就可以看到是running的）
+
+```
+service serverSpeeder status   查看锐速的运行状态
+service serverSpeeder start    停止锐速
+service serverSpeeder stop     暂停锐速
+service serverSpeeder restart  重启锐速
+```
+
+## 步骤2 搭建ssr服务端
+
+```
+wget --no-check-certificate https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocksR.sh && chmod +x shadowsocksR.sh
+```
+
+```
+./shadowsocksR.sh
+```
+
+#### BIG东东的安装选项：
+
+* 1安装ShadowsocksR
+* ssr端口456
+* 加密ase-256-cfb
+
+## 步骤3 重启vps
+
+安装完成后一定要重启机器，否则BBR加速不会启用。
+
+```
+reboot
+```
+
+## 步骤4 针对谷歌云、亚马逊ec2
+
+谷歌云防火墙规则（说白了就是创建完实例以后需要再去防火墙那个地方打开相应的端口才可以使用实例），要为http和https开放刚刚设置好的端口。
+
+![image-20180515022458227](https://ws3.sinaimg.cn/large/006tKfTcly1frbffu2nkdj30my0esdhz.jpg)
+
+![image-20180515022603506](https://ws3.sinaimg.cn/large/006tKfTcly1frbfgzenu8j30en0dqwg5.jpg)
+
+
+
+# 二、测试工具
+
+1）安装htop
+
+```
+apt-get install htop
+```
+
+2）使用htop
+
+```
+htop
+```
+

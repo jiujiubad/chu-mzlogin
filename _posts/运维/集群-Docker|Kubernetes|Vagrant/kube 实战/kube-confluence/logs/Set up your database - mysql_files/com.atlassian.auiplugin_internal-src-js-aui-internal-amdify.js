@@ -1,0 +1,3 @@
+;
+/* module-key = 'com.atlassian.auiplugin:internal-src-js-aui-internal-amdify', location = 'src/js/aui/internal/amdify.js' */
+("undefined"===typeof window?global:window).__5b6f140e41f96bdbfcd8f82ccf706510=function(){var a={};"use strict";Object.defineProperty(a,"__esModule",{value:!0});a.default=function(a,b){if(window.define){var c=window.define;c(a,[],function(){return b})}return b};return a=a["default"]}.call(this);;

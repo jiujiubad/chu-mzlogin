@@ -1,0 +1,4 @@
+;
+/* module-key = 'com.atlassian.auiplugin:internal-src-js-aui-set-visible', location = 'src/js/aui/set-visible.js' */
+("undefined"===typeof window?global:window).__2cf70c4aadc89d8bc2ac7e1cf3d2f846=function(){function d(a,b){if(a=(0,c.default)(a))(0,c.default)(a).each(function(){var a=(0,c.default)(this).hasClass("hidden");a&&b?(0,c.default)(this).removeClass("hidden"):!a&&!b&&(0,c.default)(this).addClass("hidden")})}var e={};"use strict";Object.defineProperty(e,"__esModule",{value:!0});var a=__1eb48266f41b91e032ea4c8f591d9298,c=a&&a.__esModule?a:{"default":a},a=__1f642ac889edd28b9a56a069e947b2fa,b=__b613df58051c78dae364b2cf48254285,
+b=b&&b.__esModule?b:{"default":b},d=(0,a.fn)(d,"setVisible",{sinceVersion:"5.9.0",extraInfo:"No alternative will be provided. Use jQuery.addClass() / removeClass() instead."});(0,b.default)("setVisible",d);e.default=d;return e=e["default"]}.call(this);;

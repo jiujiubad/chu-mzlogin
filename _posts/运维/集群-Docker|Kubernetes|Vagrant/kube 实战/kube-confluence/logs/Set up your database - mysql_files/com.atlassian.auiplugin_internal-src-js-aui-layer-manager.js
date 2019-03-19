@@ -1,0 +1,3 @@
+;
+/* module-key = 'com.atlassian.auiplugin:internal-src-js-aui-layer-manager', location = 'src/js/aui/layer-manager.js' */
+("undefined"===typeof window?global:window).__2894550d5040ce19aab400c067dedec6=function(){var c={};"use strict";Object.defineProperty(c,"__esModule",{value:!0});var b=__b613df58051c78dae364b2cf48254285,b=b&&b.__esModule?b:{"default":b},a=__52b7f300821764355c827c8cc415542c,a=a&&a.__esModule?a:{"default":a};(0,b.default)("LayerManager",a.default.Manager);c.default=a.default.Manager;return c=c["default"]}.call(this);;

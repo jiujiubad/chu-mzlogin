@@ -1,0 +1,4 @@
+;
+/* module-key = 'com.atlassian.auiplugin:internal-src-js-aui-populate-parameters', location = 'src/js/aui/populate-parameters.js' */
+("undefined"===typeof window?global:window).__8660dbaeedc5e4498f83ec012692062c=function(){function d(a){return a&&a.__esModule?a:{"default":a}}function e(a){a||(a=g.default);(0,f.default)(".parameters input").each(function(){var c=this.value,b=this.title||this.id;(0,f.default)(this).hasClass("list")?a[b]?a[b].push(c):a[b]=[c]:a[b]=c.match(/^(tru|fals)e$/i)?c.toLowerCase()==="true":c})}var b={};"use strict";Object.defineProperty(b,"__esModule",{value:!0});var f=d(__1eb48266f41b91e032ea4c8f591d9298),
+h=d(__b613df58051c78dae364b2cf48254285),g=d(__7ee28421707871cdb0f3f9f4c85d5e9f);(0,h.default)("populateParameters",e);b.default=e;return b=b["default"]}.call(this);;

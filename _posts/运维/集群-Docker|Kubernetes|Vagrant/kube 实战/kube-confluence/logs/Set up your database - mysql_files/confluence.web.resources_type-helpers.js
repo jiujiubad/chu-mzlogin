@@ -1,0 +1,3 @@
+;
+/* module-key = 'confluence.web.resources:type-helpers', location = '/includes/js/api/type-helpers.js' */
+define("confluence/api/type-helpers",[],function(){return{asBooleanOrString:function(a){var b=a?a.toLowerCase():"";return"true"===b?!0:"false"===b?!1:a}}});require("confluence/module-exporter").safeRequire("confluence/api/type-helpers",function(a){require("confluence/module-exporter").namespace("AJS.asBooleanOrString",a.asBooleanOrString)});;

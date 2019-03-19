@@ -1,0 +1,3 @@
+;
+/* module-key = 'com.atlassian.auiplugin:internal-src-js-aui-is-clipped', location = 'src/js/aui/is-clipped.js' */
+("undefined"===typeof window?global:window).__cfc73d725acc4f21518b9162d25592ea=function(){function c(a){a=(0,d.default)(a);return a.prop("scrollWidth")>a.prop("clientWidth")}var b={};"use strict";Object.defineProperty(b,"__esModule",{value:!0});var a=__1eb48266f41b91e032ea4c8f591d9298,d=a&&a.__esModule?a:{"default":a},a=(a=__b613df58051c78dae364b2cf48254285)&&a.__esModule?a:{"default":a};(0,a.default)("isClipped",c);b.default=c;return b=b["default"]}.call(this);;

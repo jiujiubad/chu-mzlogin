@@ -1,0 +1,3 @@
+;
+/* module-key = 'com.atlassian.auiplugin:internal-src-js-aui-backbone', location = 'src/js/aui/backbone.js' */
+("undefined"===typeof window?global:window).__f6329d7c768ba02052f18ff58de3b3af=function(){var b={};"use strict";Object.defineProperty(b,"__esModule",{value:!0});var a=__e197fa31d1e4672b8dea2bf3a364bbb5,a=a&&a.__esModule?a:{"default":a};window.Backbone||(window.Backbone=a.default);b.default=window.Backbone;return b=b["default"]}.call(this);;

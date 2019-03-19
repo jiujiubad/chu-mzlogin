@@ -1,0 +1,3 @@
+;
+/* module-key = 'com.atlassian.auiplugin:internal-src-js-aui-internal-globalize', location = 'src/js/aui/internal/globalize.js' */
+("undefined"===typeof window?global:window).__b613df58051c78dae364b2cf48254285=function(){function d(){return e.default.apply(void 0,arguments)}var b={};"use strict";Object.defineProperty(b,"__esModule",{value:!0});b.default=function(a,b){window[c]!==d&&(window[c]=(0,f.default)(d,window[c]));return window[c][a]=b};var a=__18e7ac97dbcafea2289b9d8f76250daa,e=a&&a.__esModule?a:{"default":a},f=(a=__7093939cd97251fae1fa2f5c3c55abd2)&&a.__esModule?a:{"default":a},c="AJS";return b=b["default"]}.call(this);;

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 关于我
-description: 只求日更十字
+description: 少点完美，多点产出
 keywords: chu
 comments: true
 menu: 关于
@@ -14,7 +14,7 @@ permalink: /about/
 
 『生产力』书控、工具控
 
-『专注内容产出』不求排版细节，只求日更十字 ~
+『专注内容产出』少点完美，多点产出 ~
 
 ## 联系
 

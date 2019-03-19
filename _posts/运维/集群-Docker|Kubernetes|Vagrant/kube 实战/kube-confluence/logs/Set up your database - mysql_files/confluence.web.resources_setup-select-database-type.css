@@ -1,0 +1,17 @@
+/* module-key = 'confluence.web.resources:setup-select-database-type', location = '/setup/includes/css/setup-select-database-type.css' */
+.instruction-spacing {
+    padding-bottom: 10px !important;
+}
+
+.jdbc-download-instruction-steps {
+    padding-left: 15px;
+}
+
+.invisible {
+    display: none;
+}
+
+.hint {
+    color: #707070;
+    font-size: 12px;
+}

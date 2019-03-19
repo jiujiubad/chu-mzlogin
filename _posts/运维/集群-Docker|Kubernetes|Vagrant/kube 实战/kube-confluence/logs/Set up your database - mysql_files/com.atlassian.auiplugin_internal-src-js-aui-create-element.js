@@ -1,0 +1,4 @@
+;
+/* module-key = 'com.atlassian.auiplugin:internal-src-js-aui-create-element', location = 'src/js/aui/create-element.js' */
+("undefined"===typeof window?global:window).__18e7ac97dbcafea2289b9d8f76250daa=function(){var a={};"use strict";Object.defineProperty(a,"__esModule",{value:!0});var b=__1eb48266f41b91e032ea4c8f591d9298,c=b&&b.__esModule?b:{"default":b};a.default=function(){var a=null;arguments.length&&"string"===typeof arguments[0]&&(a=(0,c.default)(document.createElement(arguments[0])),2===arguments.length&&a.html(arguments[1]));"undefined"!==typeof console&&console.warn&&console.warn("AJS's create element functionality has been deprecated since 5.9.0.\nNo alternative will be provided.\nUse document.createElement() or jQuery.parseHTML(), or preferably use a templating library.");
+return a};return a=a["default"]}.call(this);;

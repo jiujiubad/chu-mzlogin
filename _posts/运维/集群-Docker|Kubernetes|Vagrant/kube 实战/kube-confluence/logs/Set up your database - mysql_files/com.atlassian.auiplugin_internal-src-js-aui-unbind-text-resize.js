@@ -1,0 +1,4 @@
+;
+/* module-key = 'com.atlassian.auiplugin:internal-src-js-aui-unbind-text-resize', location = 'src/js/aui/unbind-text-resize.js' */
+("undefined"===typeof window?global:window).__fbfb7feeaeac5ca2272577a948f0e7da=function(){function e(b){for(var a=0,c=d.default["on-text-resize"].length;a<c;a++)if(d.default["on-text-resize"][a]===b)return d.default["on-text-resize"].splice(a,1)}var a={};"use strict";Object.defineProperty(a,"__esModule",{value:!0});var b=__b613df58051c78dae364b2cf48254285,b=b&&b.__esModule?b:{"default":b},c=__6c5b00a10190389e9639d153dff6a7cc,d=c&&c.__esModule?c:{"default":c};(0,b.default)("unbindTextResize",e);a.default=
+e;return a=a["default"]}.call(this);;

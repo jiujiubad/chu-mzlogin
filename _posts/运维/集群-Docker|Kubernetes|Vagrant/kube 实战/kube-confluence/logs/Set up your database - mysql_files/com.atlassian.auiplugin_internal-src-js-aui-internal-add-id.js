@@ -1,0 +1,4 @@
+;
+/* module-key = 'com.atlassian.auiplugin:internal-src-js-aui-internal-add-id', location = 'src/js/aui/internal/add-id.js' */
+("undefined"===typeof window?global:window).__9a0d287823262c0375f7365604c1cb37=function(){function c(a){return a&&a.__esModule?a:{"default":a}}function d(a,b){var c=(0,e.default)(a),d=b||!1;c.each(function(){var a=(0,e.default)(this);a.attr("id")||a.attr("id",(0,f.default)(d))})}var b={};"use strict";Object.defineProperty(b,"__esModule",{value:!0});var e=c(__1eb48266f41b91e032ea4c8f591d9298),g=c(__b613df58051c78dae364b2cf48254285),f=c(__2ed8997ad95265d051e5f2efe4cc210e);(0,g.default)("_addID",d);
+b.default=d;return b=b["default"]}.call(this);;

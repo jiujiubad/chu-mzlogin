@@ -1,0 +1,3 @@
+;
+/* module-key = 'com.atlassian.auiplugin:internal-src-js-aui-escape-html', location = 'src/js/aui/escape-html.js' */
+("undefined"===typeof window?global:window).__243168c81594cda3be4f65d33a9d270e=function(){function c(a){return a.replace(/[&"'<>`]/g,function(a){var b={"<":"&lt;",">":"&gt;","&":"&amp;","'":"&#39;","`":"&#96;"};return"string"===typeof b[a]?b[a]:"&quot;"})}var b={};"use strict";Object.defineProperty(b,"__esModule",{value:!0});var a=__b613df58051c78dae364b2cf48254285,a=a&&a.__esModule?a:{"default":a};(0,a.default)("escapeHtml",c);b.default=c;return b=b["default"]}.call(this);;

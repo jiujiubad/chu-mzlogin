@@ -1,0 +1,4 @@
+;
+/* module-key = 'com.atlassian.auiplugin:internal-src-js-aui-set-current', location = 'src/js/aui/set-current.js' */
+("undefined"===typeof window?global:window).__090f6eca21b8bcb09a49c1b061c487b8=function(){function c(a,b){if(a=(0,e.default)(a))b?a.addClass("current"):a.removeClass("current")}var d={};"use strict";Object.defineProperty(d,"__esModule",{value:!0});var a=__1eb48266f41b91e032ea4c8f591d9298,e=a&&a.__esModule?a:{"default":a},a=__1f642ac889edd28b9a56a069e947b2fa,b=__b613df58051c78dae364b2cf48254285,b=b&&b.__esModule?b:{"default":b},c=(0,a.fn)(c,"setCurrent",{sinceVersion:"5.9.0",extraInfo:"No alternative will be provided. Use jQuery.addClass() / removeClass() instead."});
+(0,b.default)("setCurrent",c);d.default=c;return d=d["default"]}.call(this);;

@@ -1,0 +1,4 @@
+;
+/* module-key = 'com.atlassian.auiplugin:internal-src-js-aui-header', location = 'src/js/aui/header.js' */
+("undefined"===typeof window?global:window).__4590f0ed36808ef05970e860aac32539=function(){function e(a){return a&&a.__esModule?a:{"default":a}}function f(){(0,g.default)(".aui-header").each(function(){(0,h.default)(this)})}var d={};"use strict";Object.defineProperty(d,"__esModule",{value:!0});var g=e(__1eb48266f41b91e032ea4c8f591d9298),h=e(__9113497f6958be9d447bfc91feec04c6),b;var a=__1f642ac889edd28b9a56a069e947b2fa;if(a&&a.__esModule)b=a;else{var c={};if(null!=a)for(b in a)Object.prototype.hasOwnProperty.call(a,
+b)&&(c[b]=a[b]);c.default=a;b=c}a=e(__b613df58051c78dae364b2cf48254285);(0,g.default)(f);c={};c.setup=b.fn(f,"responsiveheader.setup",{removeInVersion:"8.0.0",sinceVersion:"5.8.0",extraInfo:"No need to manually initialise anymore as this is now a web component."});(0,a.default)("responsiveheader",c);d.default=c;return d=d["default"]}.call(this);;
