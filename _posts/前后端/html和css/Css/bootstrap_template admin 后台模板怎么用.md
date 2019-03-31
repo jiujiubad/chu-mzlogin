@@ -1,35 +1,27 @@
-* 201804
-* 编程+前端
+* 201804/201903
 
 ## 下载模板
-
-壹成购买模板链接:https://pan.baidu.com/s/1ZLgT2ecrfW3aiUX2eR6UTg  密码:ogaz
-
-网络免费模板链接:https://pan.baidu.com/s/1yfwBfBlPLV98zAAc6TYoBg  密码:kfpc
-
+搜索：free bootstrap multi page website templates    
+壹成购买模板链接:https://pan.baidu.com/s/1ZLgT2ecrfW3aiUX2eR6UTg  密码:ogaz   
+网络免费模板链接:https://pan.baidu.com/s/1yfwBfBlPLV98zAAc6TYoBg  密码:kfpc   
 
 ### 步骤 1 复制代码
-
-整个Filis/assets文件夹复制到项目里的vendor文件夹中。
+整个Filis/assets文件夹复制到 vendor/assets。
 
 ### 步骤 2 设置assets
+引入 assets precompile：<https://ruby-china.github.io/rails-guides/asset_pipeline.html>    
+assets precompile 加载不到图片的解决办法：<https://gist.github.com/mrbongiolo/63cce06b1b49c99fdb9a> 
 
-rails默认可以识别vendor/aseets的stylesheets、javascripts、images文件夹，所以要把相应的文件夹重命名为stylesheets、javascripts、images。另外，其他不能默认识别的文件夹要在config/application.rb里声明，代码如下：
-
+rails默认可以识别vendor/aseets的stylesheets、javascripts、images文件夹，所以要把相应的文件夹重命名为stylesheets、javascripts、images。另外，其他不能默认识别的文件夹要在config/application.rb里声明，代码如下：   
 ```
 config.assets.paths << Rails.root.join('vendor', 'assets', 'demo')
 config.assets.paths << Rails.root.join('vendor', 'assets', 'fonts')
 config.assets.paths << Rails.root.join('vendor', 'assets', 'plugins')
 ```
 
-> 详见rails官网：https://ruby-china.github.io/rails-guides/asset_pipeline.html
-
 ### 步骤 3 全局html
-
-按照模板里的index.html代码，把手机自适应、字体、全局css、全局js样式代码粘贴到application.html.erb中
-
+按照模板里的index.html代码，把手机自适应、字体、全局css、全局js样式代码粘贴到application.html.erb中   
 1）app/views/layouts/application.html.erb
-
 ```
 <!DOCTYPE html>
 <html>
@@ -58,22 +50,16 @@ config.assets.paths << Rails.root.join('vendor', 'assets', 'plugins')
 </html>
 
 ```
-
 * 其中common/sidebar用来放左侧栏的代码，yield是div class="right-column"的代码
 
 ### 步骤 4 引用css
-
-按照index.html代码head标签内的css，改写成@import
-
+按照index.html代码head标签内的css，改写成@import    
 app/assets/stylesheets/application.css
-
 ```
 *= require_self
 *= require static_pages
-```
-
+```   
 app/assets/stylesheets/static_pages.scss
-
 ```
 // import lib from wrapbootstrap
 @import "batch-icons/batch-icons";
@@ -87,11 +73,8 @@ app/assets/stylesheets/static_pages.scss
 ```
 
 ### 步骤 5 引用js
-
-按照index.html代码body标签结束前的js，改写成//= require
-
+按照index.html代码body标签结束前的js，改写成 //= require   
 app/assets/javascripts/application.js
-
 ```
 // ** import lib from wrapbootstrap ** //
 //= require jquery/jquery-3.1.1.min.js
@@ -111,18 +94,15 @@ app/assets/javascripts/application.js
 ```
 
 ### 步骤 6
-
-模板index.html，左侧代码放入common/sidebar，右侧代码div class="right-column"不同页面放在不同的html文件中
+模板index.html，左侧代码放入 `common/sidebar`，右侧代码 `div class="right-column"` 不同页面放在不同的html文件中
 
 ### 步骤 7
-
 重启rails s，此时网站大体出来了，剩下图片还是挂掉的。
 
 ### 步骤 8
-
-替换掉照片路径的/img，改成如下
-
+替换掉照片路径的 /img，`images_tag` 用法：<https://apidock.com/rails/ActionView/Helpers/AssetTagHelper/image_tag>
 ```
-<img src="assets/logo-white.png" width="145" height="32.3" alt="QuillPro">
+<!--<img src="assets/logo-white.png" width="145" height="32.3" alt="QuillPro">-->
+image_tag("icon.png", size: "16x10", alt: "Edit Entry")
+<!--生成 <img src="/assets/icon.png" width="16" height="10" alt="Edit Entry" />-->
 ```
-
