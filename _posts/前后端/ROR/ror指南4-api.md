@@ -34,3 +34,9 @@ form_with 的设置默认 `remote:true`，不想用 remote 就需要手动设置
 Ruby-China-Jasl：「Rails5 推荐 form_with 然后不提供 `local:true` 来实现『Ajax 模式』提交」
 
 ## 4.5 RubyApi
+### 4.5.1 数组
+uniq 去重
+compact 去所有 nil   
+### 4.5.2 字符串
+chomp 去最后一个换行符
+strip 去开头结尾的空格

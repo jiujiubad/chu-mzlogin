@@ -239,3 +239,13 @@ rake db:migrate:down VERSION=20100905201547，撤销某一个迁移
 rails db:migrate:status查看状态
 ```
 
+# history 历史命令
+```
+history|head -n 3  #显示前三条历史命令
+history|tail -n 3  #显示最后三条历史命令
+```
+zsh 删除历史命令 
+```
+ vi ~/.zsh_history 
+```
+

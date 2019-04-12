@@ -14,9 +14,11 @@ assets precompile 加载不到图片的解决办法：<https://gist.github.com/m
 
 rails默认可以识别vendor/aseets的stylesheets、javascripts、images文件夹，所以要把相应的文件夹重命名为stylesheets、javascripts、images。另外，其他不能默认识别的文件夹要在config/application.rb里声明，代码如下：   
 ```
+# 引入第三方静态文件
 config.assets.paths << Rails.root.join('vendor', 'assets', 'demo')
 config.assets.paths << Rails.root.join('vendor', 'assets', 'fonts')
 config.assets.paths << Rails.root.join('vendor', 'assets', 'plugins')
+config.assets.precompile << Proc.new { |path, fn| fn =~ /vendor\/assets\/images/ }
 ```
 
 ### 步骤 3 全局html
