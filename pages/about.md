@@ -8,13 +8,11 @@ menu: 关于
 permalink: /about/
 ---
 
-『chu』
+我是 chu
 
-『王者荣耀』爱好者
+王者荣耀爱好者，生产力书控、工具控。希望专注内容，少点完美，多点产出 ~
 
-『生产力』书控、工具控
-
-『专注内容产出』少点完美，多点产出 ~
+本博客只用于辅助记录，更多系统性内容整理在 <a href="https://jiujiubad.github.io/gitbook" target="_blank">我的电子书</a>，欢迎查看。
 
 ## 联系
 
@@ -22,6 +20,8 @@ permalink: /about/
 <!-- * {{ website.sitename }}：[@{{ website.name }}]({{ website.url }}) -->
 * {{ website.sitename }}：<{{ website.url }}>
 {% endfor %}
+
+* 微信：jiujiubad
 
 ## 技术栈
 

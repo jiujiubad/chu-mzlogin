@@ -28,6 +28,7 @@
 }
 .mega-octicon { font-size: 32px; }
 
+/*icon 地址：https://github.com/gitpitch/gitpitch/blob/master/public/libs/octicons/3.5.0/octicons.less*/
 .octicon-alert:before { content: '\f02d'} /*  */
 .octicon-arrow-down:before { content: '\f03f'} /*  */
 .octicon-arrow-left:before { content: '\f040'} /*  */
@@ -100,6 +101,7 @@
 .octicon-gift:before { content: '\f042'} /*  */
 .octicon-gist:before { content: '\f00e'} /*  */
 .octicon-gist-secret:before { content: '\f08c'} /*  */
+.octicon-gitbook:before { content: '\f007'} /*  */
 .octicon-git-branch-create:before,
 .octicon-git-branch-delete:before,
 .octicon-git-branch:before { content: '\f020'} /*  */
