@@ -120,12 +120,13 @@ systemctl reload nginx
 ```
 
 访问 `http://ip:端口号` 即可看到 AriaNg 网页  
-网页上点击左侧『AriaNg 设置』-『RPC』- 填写『Aria2 RPC 密钥』  
+网页上点击左侧『AriaNg 设置』-『RPC（你的 ip 号）』- 填写『Aria2 RPC 密钥』  ，修改后左侧『Aria2 状态』会变成已连接
 
 ## 1.2.3 安装 Rclone
 rclone 常用参数：<https://p3terx.com/archives/rclone-advanced-user-manual-common-command-parameters.html>
 
 1）安装 Rclone  
+
 ```
 apt-get -y install unzip
 curl https://rclone.org/install.sh | sudo bash

@@ -31,15 +31,48 @@ export PATH="$HOME/.rbenv/bin:$PATH" && eval "$(rbenv init -)" #rbenv设置ruby�
 source ~/.zshrc
 ```
 ## rbenv 插件
-### rbenv-gem-rehash
+### rbenv-gem-rehash 必装
 `gem install xxx` 或 `bundle` 后无需手动输入 `rbenv rehash`，就可以查看版本和使用
+
 ```
 git clone https://github.com/rbenv/rbenv-gem-rehash.git ~/.rbenv/plugins/rbenv-gem-rehash
 ```
-* ruby-build：不折腾。`rbenv install 2.6.0` 时会自动用它编译 ruby
-* gemset：不折腾。没有一个 ruby 下打开多版本 rails 的需求。
-* rbenv-update：不折腾，危险的操作。通过rbenv update命令来更新rbenv以及所有插件
-* rbenv-aliases：不折腾，没需求。别名
+### ruby-build
+
+不折腾。`rbenv install 2.6.0` 时会自动用它编译 ruby
+
+### gemset
+
+> 使用场景：一个 ruby 版本比如 2.6.1，需要多种 gem 方案的时候。比如需要多个 rails 版本，或某些特定 gem 不需要。
+
+安装
+
+```
+# 复制插件
+git clone git://github.com/jf/rbenv-gemset.git $HOME/.rbenv/plugins/rbenv-gemset
+
+# 安装 rbenv-gemset
+brew update
+brew install rbenv-gemset
+```
+
+使用
+
+```
+rbenv gemset list                      #查看所有gemset
+rbenv gemset create [version] [gemset] #创建gemset（填写ruby版本、gemset名称）
+rbenv gemset init [gemset]             #切换到指定名称的gemset
+rbenv gemset delete [version] [gemset] #删除gemset
+```
+
+### rbenv-update
+
+不折腾，危险的操作。通过rbenv update命令来更新rbenv以及所有插件
+
+### rbenv-aliases
+
+不折腾，没需求。别名
+
 ## Ruby 删除
 ```
 rbenv uninstall 2.6.0

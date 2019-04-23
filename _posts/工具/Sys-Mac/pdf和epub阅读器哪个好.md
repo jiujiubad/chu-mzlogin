@@ -4,7 +4,7 @@
 
 需求：能云同步笔记；能导出笔记；能高亮和做笔记记录；
 
-pdf 阅读器：预览、Clearview、Pdf expert 三个都好用，都有 icloud 同步，所以优先用 预览，需要导出或清除笔记时用 Clearview。
+pdf 阅读器：预览、Clearview、Pdf expert 三个都好用，都有 icloud 同步，所以优先用 预览，而且预览复制代码是最快捷方便的，需要导出或清除笔记时用 Clearview。
 
 epub 阅读器：用 Clearview，开启 icloud 同步
 
